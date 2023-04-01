@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Text, Box, Center, VStack, useColorModeValue} from 'native-base';
 import ThemeToggle from '../components/theme-toggle';
-import Check from '../components/animated-checkbox';
+import TaskItem from '../components/task-item';
 export default function MainScreen() {
   return (
     <Center
@@ -10,7 +10,8 @@ export default function MainScreen() {
       px={4}
       flex={1}>
       <VStack space={5} alignItems="center">
-        <Check />
+        <TaskItem />
+
         <Box p={10} bg={useColorModeValue('red.500', 'yellow.500')}>
           <Text>Ola</Text>
         </Box>

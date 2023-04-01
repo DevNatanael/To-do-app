@@ -3,15 +3,21 @@ import React, {useState} from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 import CheckBox from '@react-native-community/checkbox';
 
-export default function Check() {
-  const [toggleCheckBox, setToggleCheckBox] = useState(false);
+interface Props {
+  highlightColor: string;
+  boxOutlineColor: string;
+  setChecked: any;
+  value: boolean;
+}
 
+export default function Check(props: Props) {
+  const {value, setChecked} = props;
   return (
     <CheckBox
       disabled={false}
-      value={toggleCheckBox}
-      onValueChange={newValue => setToggleCheckBox(newValue)}
-      tintColors={{true: 'red', false: 'black'}}
+      value={value}
+      onValueChange={newValue => setChecked(newValue)}
+      tintColors={{true: props.highlightColor, false: props.boxOutlineColor}}
     />
   );
 }
