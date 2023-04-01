@@ -1,11 +1,17 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React, {useState} from 'react';
 import {StyleSheet, View, Text} from 'react-native';
-import AnimatedLottieView from 'lottie-react-native';
-export default function CheckBox() {
+import CheckBox from '@react-native-community/checkbox';
+
+export default function Check() {
+  const [toggleCheckBox, setToggleCheckBox] = useState(false);
+
   return (
-    <View>
-      <Text>aAAAA</Text>
-    </View>
+    <CheckBox
+      disabled={false}
+      value={toggleCheckBox}
+      onValueChange={newValue => setToggleCheckBox(newValue)}
+      tintColors={{true: 'red', false: 'black'}}
+    />
   );
 }

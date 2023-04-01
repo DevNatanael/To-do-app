@@ -10,6 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-community/checkbox": "^0.5.15",
     "@react-navigation/native": "^6.1.6",
     "lottie-react-native": "^6.0.0-rc.3",
     "native-base": "^3.4.28",
