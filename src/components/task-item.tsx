@@ -4,16 +4,17 @@ import {Pressable} from 'react-native';
 import {
   Box,
   HStack,
-  Text,
+  Icon,
   useTheme,
   themeTools,
   useColorModeValue,
 } from 'native-base';
 import Check from './animated-checkbox';
 import AnimatedTaskLabel from './animated-task-label';
-
-interface Props {
+import SwipeView from './swipable-view';
+interface Props extends Pick<PanGestureHandlerProps, 'simultaneousHandlers'> {
   onToggleCheckBox?: () => void;
+
 }
 
 const TaskItem = (props: Props) => {
