@@ -11,14 +11,17 @@
   },
   "dependencies": {
     "@react-native-community/checkbox": "^0.5.15",
-    "@react-navigation/native": "^6.1.6",
+    "@react-navigation/drawer": "^6.1.8",
+    "@react-navigation/native": "^6.0.6",
     "lottie-react-native": "^6.0.0-rc.3",
     "native-base": "^3.4.28",
     "react": "18.2.0",
     "react-native": "0.71.5",
     "react-native-checkbox-reanimated": "^0.1.1",
+    "react-native-gesture-handler": "^2.9.0",
     "react-native-reanimated": "^3.0.2",
     "react-native-safe-area-context": "3.3.2",
+    "react-native-screens": "^3.20.0",
     "react-native-svg": "12.1.0"
   },
   "devDependencies": {
