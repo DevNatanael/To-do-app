@@ -91,7 +91,7 @@ const TaskItem = (props: Props) => {
           textColor={activeTextColor}
           inactiveTextColor={doneTextColor}
           strikethrough={checked}>
-          Task Item
+          {subject}
         </AnimatedTaskLabel>
       </HStack>
     </SwipeView>

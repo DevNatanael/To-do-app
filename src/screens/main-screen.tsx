@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Text, Box, Center, VStack, useColorModeValue} from 'native-base';
+import {Center, VStack} from 'native-base';
 import ThemeToggle from '../components/theme-toggle';
 import TaskItem from '../components/task-item';
 export default function MainScreen() {
@@ -10,11 +10,8 @@ export default function MainScreen() {
       px={4}
       flex={1}>
       <VStack space={5} alignItems="center" w="full">
-        <TaskItem />
+        <TaskItem subject="Task Item" />
 
-        <Box p={10} bg={useColorModeValue('red.500', 'yellow.500')}>
-          <Text>Ola</Text>
-        </Box>
         <ThemeToggle />
       </VStack>
     </Center>
